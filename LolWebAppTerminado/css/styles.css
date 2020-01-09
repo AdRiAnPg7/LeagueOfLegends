@@ -1,0 +1,243 @@
+body{
+    background: url("../img/decimo-aniversiario.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-size: 18px;
+    color: #fff;
+}
+/*Inicio Contenido*/
+#region-tile, #champion-tile{
+    height: 400px;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+#region-tile:hover, #champion-tile:hover, #championUni-tile:hover{
+    box-shadow: 0 1px 5px 1px #7ad3df;
+}
+.imagensita:hover{
+  box-shadow: 0 1px 5px 1px #ff1a12;
+}
+#region-tile {
+    background: url('../img/regionMap.jpg') no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+#champion-tile {
+    background: url('../img/champions.jpg') no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+#region-tile span, #champion-tile span, #championUni-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    opacity: .8;
+}
+/*END menu contenido*/
+
+/*contenido champions*/
+
+#championUni-tile{
+  height: 280px;
+  width: 154px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+button{
+  margin: 30px;
+}
+
+/* END contenido champions */
+/*  contenido champion */
+
+.championsito{
+  margin-top: 10%;
+}
+.izquierda{
+  text-align: left;
+}
+.centro{
+  text-align: center;
+}
+.derecha{
+  text-align: right;
+}
+.dorado{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #d2be74;
+}
+.grande{
+  font-size: 2.5rem;
+}
+.poderes{
+  font-family: 'Courier New', Courier, monospace;
+}
+.descripcion{
+  background-color: rgba(0, 0, 0,0.5);
+  font-size: 21px;
+}
+.negrito{
+  color: #222;
+}
+input.anchito{
+  width: 90%;
+}
+/* END CHAMPION */
+
+/* Region */
+.titulosito{
+  font-size: 65px;
+}
+.iconsito{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* END Region */
+
+/* FOOTER */
+/*--contact-- */
+.contact-forms input,
+.contact-forms textarea {
+  width: 100%;
+  font-size: 14px;
+  color: #000;
+  padding: .8em .8em;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #000;
+  background: #ffffff;
+  outline: none !important;
+}
+
+.contact-forms textarea {
+  resize: none;
+  height: 12em;
+}
+
+.address_mail_footer_grids iframe {
+  width: 100%;
+  height: 31em;
+  border: none;
+}
+
+.footer_grid_left {
+  background: #7c88ff;
+  padding: 35px 35px;
+  -webkit-box-shadow: -3px -1px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px -1px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -3px -1px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contact_footer_grid_left h5 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.footer_grid_left p a:hover {
+  color: #000;
+}
+
+.sent-butnn {
+  width: 100%;
+  font-size: 17px;
+  padding: 11px 68px;
+  color: #fff;
+  outline: none;
+  margin-top: 1em;
+  background: #7c88ff;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+.sent-butnn:hover {
+  background: #000;
+}
+
+/*--//contact-- */
+/*--footer --*/
+footer {
+  background: #000;
+}
+
+.footer-below p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.icons ul li {
+  display: inline-block;
+}
+
+.icons ul li a {
+  color: #fff;
+}
+
+.icons ul li a span {
+  font-size: 15px;
+  letter-spacing: 0px;
+  width: 37px;
+  height: 37px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0px 5px;
+  color: #fff;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -moz-transition: 0.5s all;
+}
+
+.icons ul li a span:hover {
+  color: #000;
+  background: #fff;
+}
+
+/*--//footer --*/
+/* END FOOTER */
+
+.btn-personalizado{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #efb810;
+  background-color: #3c4246;
+  border-radius: 6px;
+  border: 3px solid #efb810;
+}
+.btn-personalizado:hover{
+  color: #84d6ff;
+  background-color: #3d505e;
+  border: 3px solid #2848ff;
+}
+
+/*COMIENZO CHAMPIONS*/
+.topsito{
+  margin-top: 25px;
+}

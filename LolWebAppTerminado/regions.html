@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="img/icono-pestaña.png"/>
+    <title>Lol | Regiones </title>
+  </head>
+  <body>
+    <!--  HEADER   -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="img/iconoLolIinicio.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Inicio">
+        Explora Runaterra
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-nav ml-auto mr-5 text-center">
+          <a class="nav-item nav-link mr-lg-2" href="regions.html">Regiones</a>
+          <a class="nav-item nav-link mr-lg-2" href="champions.html">Campeones</a>
+        </div>
+      </div>
+    </nav>
+    <!--  END HEADER   -->
+
+    <!--  CONTENIDO   -->
+    <div class="container">
+
+      <button id ="getRegionsBtn" class="btn-personalizado text center" type="button">Presione aca</button>
+
+      <!--postButton-->
+      <button type="button" class="btn-personalizado" data-toggle="modal" data-target="#postModalCenter">
+      Añadir Region
+      </button>
+      <!--editButton-->
+      <button type="button" class="btn-personalizado" data-toggle="modal" data-target="#putModalCenter">
+        Editar Region
+      </button>
+      <!--editButton-->
+      <button type="button" class="btn-personalizado" data-toggle="modal" data-target="#deleteModalCenter">
+        Eliminar Region
+      </button>
+
+
+
+
+      <!-- Modal POST-->
+      <div class="modal fade negrito" id="postModalCenter" tabindex="-1" role="dialog" aria-labelledby="postModalCenter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Crear Region</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!--Comienzo POST-->
+              <form id="newRegionForm">
+                <div class="container">
+
+                  <p>
+                    <label for="newRegionName">Nombre: </label>
+                    <input type="text" name="newRegionName">
+                  </p>
+                  <p>
+                    <label for="newRegionDescription">Descripcion: </label>
+                    <input class="anchito" type="text" name="newRegionDescription">
+                  </p>
+                  <p>
+                    <label for="newRegionImgLogo">imgLogo: </label> 
+                    <input class="anchito" type="text" name="newRegionImgLogo" value="./img/Region/Region_Name/region-logo.png">
+                  </p>
+                  <p> 
+                    <label for="newRegionImgCrsl">imgCrsl: </label>
+                    <input class="anchito" type="text" name="newRegionImgCrsl" value="./img/Region/Region_Name/region-crsl.jpg">
+                  </p>
+                  <p>
+                    <label for="newRegionImgBanner">imgBanner: </label>
+                    <input class="anchito" type="text" name="newRegionImgBanner" value="Dejar vacio"> 
+                  </p>
+                  
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input class="btn btn-primary" type="submit" value="Guardar Cambios">
+                  </div>
+                </div>
+              </form>
+              <!--End POST-->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- End Modal POST-->
+      <!-- Modal PUT-->
+      <div class="modal fade negrito" id="putModalCenter" tabindex="-1" role="dialog" aria-labelledby="putModalCenter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Editar Region</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!--Comienzo PUT-->
+              <form id="putRegionForm">
+                <div class="container">
+                  <p>
+                    <label for="idToUptade">id: </label>
+                    <input type="text" name="idToUptade">
+                  </p>
+                  <p>
+                    <label for="newRegionName">Nombre: </label>
+                    <input type="text" name="newRegionName">
+                  </p>
+                  <p>
+                    <label for="newRegionDescription">Descripcion: </label>
+                    <input class="anchito" type="text" name="newRegionDescription">
+                  </p>
+                  <p>
+                    <label for="newRegionImgLogo">imgLogo: </label> 
+                    <input class="anchito" type="text" name="newRegionImgLogo" value="./img/Region/Region_Name/region-logo.png">
+                  </p>
+                  <p> 
+                    <label for="newRegionImgCrsl">imgCrsl: </label>
+                    <input class="anchito" type="text" name="newRegionImgCrsl" value="./img/Region/Region_Name/region-crsl.jpg">
+                  </p>
+                  <p>
+                    <label for="newRegionImgBanner">imgBanner: </label>
+                    <input class="anchito" type="text" name="newRegionImgBanner" value="Dejar vacio"> 
+                  </p>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input class="btn btn-primary" type="submit" value="Guardar Cambios">
+                  </div>
+                </div>
+              </form>
+              <!--End PUT-->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- End Modal PUT-->
+      <!-- Modal DELETE-->
+      <div class="modal fade negrito" id="deleteModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteModalCenter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Eliminar Region</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!--Comienzo DELETE-->
+              <form id="deleteRegionForm">
+                <div class="container">      
+
+                  <p><label for="id">Region Id: </label>
+                  <input type="text" name="idRegionToDelete"> </p>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input class="btn btn-primary" type="submit" value="Eliminar">
+                  </div>
+                </div>
+              </form>
+              <!--End DELETE-->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!--End Modal DELETE-->
+      <div id="regionsContainer"></div>
+      <br><br><br>
+      <div id="regionsContainer2"></div>
+      <br>  
+    </div>
+    
+
+    <!--  END CONTENIDO   -->
+
+
+    <!--Footer -->   
+    <footer class="py-2">
+      <div class="icons text-center py-md-3 pb-2">
+         <ul>
+            <li>Follow Us: <a href="https://www.facebook.com/LeagueofLegendsLatino"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="https://www.youtube.com/user/RiotGamesLatino"><span class="fab fa-youtube"></span></a></li>
+            <li><a href="https://twitter.com/leagueoflegends"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://pegi.info/"><span class="fas fa-gamepad"></span></a></li>
+         </ul>
+      </div>
+      <div class="footer-below text-center">
+         <p>©2019 League Of Legends | Design by <a href="https://www.facebook.com/adrian.mendoza.pg" target="_blank">Adrian</a> & <a href="https://www.facebook.com/profile.php?id=100009147385118" target="_blank">Augusto</a></p>
+      </div>
+      
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/scriptRegiones.js"></script>
+  </body>
+</html>

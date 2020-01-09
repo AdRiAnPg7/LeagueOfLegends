@@ -1,0 +1,16 @@
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\bin\MCD\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\bin\MCD\Debug\netcoreapp2.2\appsettings.json
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\bin\MCD\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\bin\MCD\Debug\netcoreapp2.2\LolProyect.deps.json
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\bin\MCD\Debug\netcoreapp2.2\LolProyect.runtimeconfig.json
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\bin\MCD\Debug\netcoreapp2.2\LolProyect.runtimeconfig.dev.json
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\bin\MCD\Debug\netcoreapp2.2\LolProyect.dll
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\bin\MCD\Debug\netcoreapp2.2\LolProyect.pdb
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\obj\MCD\Debug\netcoreapp2.2\LolProyect.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\obj\MCD\Debug\netcoreapp2.2\LolProyect.RazorAssemblyInfo.cache
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\obj\MCD\Debug\netcoreapp2.2\LolProyect.RazorAssemblyInfo.cs
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\obj\MCD\Debug\netcoreapp2.2\LolProyect.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\obj\MCD\Debug\netcoreapp2.2\LolProyect.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\obj\MCD\Debug\netcoreapp2.2\LolProyect.RazorTargetAssemblyInfo.cache
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\obj\MCD\Debug\netcoreapp2.2\LolProyect.dll
+C:\Users\usuario\Desktop\Defensa\LolProyect\LolProyect\obj\MCD\Debug\netcoreapp2.2\LolProyect.pdb

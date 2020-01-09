@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="img/icono-pestaña.png"/>
+    <title>Lol | Champions</title>
+  </head>
+  <body>
+    <!--  HEADER   -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="img/iconoLolIinicio.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Inicio">
+        Explora Runaterra
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-nav ml-auto mr-5 text-center">
+          <a class="nav-item nav-link mr-lg-2" href="index.html">Home</a>
+          <a class="nav-item nav-link mr-lg-2" href="regions.html">Regiones</a>
+          <a class="nav-item nav-link mr-lg-2" href="champions.html">Campeones</a>
+        </div>
+      </div>
+    </nav>
+    <!--  END HEADER   -->
+
+    <!--  CONTENIDO   -->
+    <div class="container">
+      <div><button id ="getChampionsBtn" class="btn-personalizado" type="button">Mostrar Campeones</button></div>
+
+
+      <!-- Button trigger modal -->
+ 
+      <!--postButton-->
+      <div>
+        <button type="button" class="btn-personalizado" data-toggle="modal" data-target="#postModalCenter">
+        Añadir Campeon
+        </button>
+      </div>
+      <!--editButton-->
+      <div>
+        <button type="button" class="btn-personalizado" data-toggle="modal" data-target="#putModalCenter">
+          Editar Campeon
+        </button>
+      </div>
+      <!--editButton-->
+      <div>
+        <button type="button" class="btn-personalizado" data-toggle="modal" data-target="#deleteModalCenter">
+          Eliminar Campeon
+        </button>
+      </div>
+      
+      <!--End Button trigger modal -->
+
+      <!-- Modal POST-->
+      <div class="modal fade negrito" id="postModalCenter" tabindex="-1" role="dialog" aria-labelledby="postModalCenter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Crear Campeon</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!--Comienzo POST-->
+              <form id="newChampionForm">
+                <div class="container">
+                  <p><label for="idRegionChampionToPost" class="dorado">IdRegion del champ a postear: </label>
+                    <input type="text" name="idRegionChampionToPost"> </p>
+                  <p>
+                    <label for="newChampionName">Nombre: </label>
+                    <input type="text" name="newChampionName">
+                  </p>
+                  <p>
+                    <label for="newChampionTittle">Titulo: </label>
+                    <input type="text" name="newChampionTittle">
+                  </p>
+                  <p>
+                    <label for="newChampionSafeLane">Linea Sugerida: </label> 
+                    <input type="text" name="newChampionSafeLane">
+                  </p>
+                  <p> 
+                    <label for="newChampionType">Tipo: </label>
+                    <input type="text" name="newChampionType">
+                  </p>
+                  <p>
+                    <label for="newChampionDescription">Descripcion: </label>
+                    <input type="text" name="newChampionDescription">
+                  </p>
+                  <p>
+                    <label for="newChampionSkills">Habilidades: </label> 
+                    <input type="text" name="newChampionSkills">
+                  </p>
+                  <p>
+                    <label for="newChampionImgCard">Direccion imgCard:</label>
+                    <input class="anchito" type="text" name="newChampionImgCard" value="./img/champion/NOMBRECHAMP/nombreChamp-card.jpg">
+                  </p>
+                  <p>
+                    <label for="newChampionImgIcon">Direccion imgIcon:</label> 
+                    <input class="anchito" type="text" name="newChampionImgIcon" value="./img/champion/NOMBRECHAMP/nombreChamp-icon.jpg">
+                  </p>
+                  <p>
+                    <label for="newChampionImgBanner">Direccion imgBanner:</label> 
+                    <input class="anchito" type="text" name="newChampionImgBanner" value="./img/champion/NOMBRECHAMP/nombreChamp-splasart.jpg">
+                  </p>
+
+
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input class="btn btn-primary" type="submit" value="Guardar Cambios">
+                  </div>
+                </div>
+              </form>
+              <!--End POST-->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- End Modal POST-->
+      <!-- Modal PUT-->
+      <div class="modal fade negrito" id="putModalCenter" tabindex="-1" role="dialog" aria-labelledby="putModalCenter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Editar Campeon</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!--Comienzo PUT-->
+              <form id="putChampionForm">
+                <div class="container">
+                  <p>
+                    <label for="idToUptade">id: </label>
+                    <input type="text" name="idToUptade">
+                  </p>
+                  <p>
+                    <label for="newChampionName">Nombre: </label>
+                    <input type="text" name="newChampionName">
+                  </p>
+                  <p>
+                    <label for="newChampionTittle">Titulo: </label>
+                    <input type="text" name="newChampionTittle">
+                  </p>
+                  <p>
+                    <label for="newChampionSafeLane">Linea Sugerida: </label> 
+                    <input type="text" name="newChampionSafeLane">
+                  </p>
+                  <p> 
+                    <label for="newChampionType">Tipo: </label>
+                    <input type="text" name="newChampionType">
+                  </p>
+                  <p>
+                    <label for="newChampionDescription">Descripcion: </label>
+                    <input type="text" name="newChampionDescription">
+                  </p>
+                  <p>
+                    <label for="newChampionSkills">Habilidades: </label> 
+                    <input type="text" name="newChampionSkills">
+                  </p>
+                  <p> 
+                    <label for="newChampionIdRegion" class="dorado" >idRegion: </label>
+                    <input type="text" name="newChampionIdRegion">
+                  </p>
+                  <p>
+                    <label for="newChampionImgCard">Direccion imgCard:</label>
+                    <input class="anchito" type="text" name="newChampionImgCard" value="./img/champion/NOMBRECHAMP/nombreChamp-card.jpg">
+                  </p>
+                  <p>
+                    <label for="newChampionImgIcon">Direccion imgIcon:</label> 
+                    <input class="anchito" type="text" name="newChampionImgIcon" value="./img/champion/NOMBRECHAMP/nombreChamp-icon.jpg">
+                  </p>
+                  <p>
+                    <label for="newChampionImgBanner">Direccion imgBanner:</label> 
+                    <input class="anchito" type="text" name="newChampionImgBanner" value="./img/champion/NOMBRECHAMP/nombreChamp-splasart.jpg">
+                  </p>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input class="btn btn-primary" type="submit" value="Guardar Cambios">
+                  </div>
+                </div>
+              </form>
+              <!--End PUT-->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- End Modal PUT-->
+      <!-- Modal DELETE-->
+      <div class="modal fade negrito" id="deleteModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteModalCenter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Eliminar Campeon</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!--Comienzo DELETE-->
+              <form id="deleteChampionForm">
+                <div class="container">      
+                  
+                  <p><label for="idRegionChampionToDelete" class="dorado" >IdRegion del champ a eliminar: </label>
+                  <input type="text" name="idRegionChampionToDelete"> </p>
+
+                  <p><label for="id">Champion Id: </label>
+                  <input type="text" name="idChampionToDelete"> </p>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input class="btn btn-primary" type="submit" value="Eliminar">
+                  </div>
+                </div>
+              </form>
+              <!--End DELETE-->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!--End Modal DELETE-->
+      <div id="championsContainer"></div>
+    </div>
+
+    <!--  END CONTENIDO   -->
+
+
+    <!--Footer -->   
+    <footer class="py-2">
+      <div class="icons text-center py-md-3 pb-2">
+         <ul>
+            <li>Follow Us: <a href="https://www.facebook.com/LeagueofLegendsLatino"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="https://www.youtube.com/user/RiotGamesLatino"><span class="fab fa-youtube"></span></a></li>
+            <li><a href="https://twitter.com/leagueoflegends"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://pegi.info/"><span class="fas fa-gamepad"></span></a></li>
+         </ul>
+      </div>
+      <div class="footer-below text-center">
+         <p>©2019 League Of Legends | Design by <a href="https://www.facebook.com/adrian.mendoza.pg" target="_blank">Adrian</a> & <a href="https://www.facebook.com/profile.php?id=100009147385118" target="_blank">Augusto</a></p>
+      </div>
+      
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/scriptCampeones.js"></script>
+  </body>
+</html>
